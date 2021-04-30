@@ -49,7 +49,7 @@ class MyTodoList extends React.Component {
     const Task = ({id, name, description, completed}) => (
     [
     <div>{name}  {description} {completed ? "true" : "false"}</div>,
-    <button className="buttonstyle" onClick={console.log("Task " + id + " completed status " + completed)}>CLICK</button>
+    <button className="buttonstyle" onClick={console.log(`Task ${id} completed status is ${completed}`)}>CLICK</button>
     ]
   )
 
@@ -58,3 +58,5 @@ class MyTodoList extends React.Component {
   }
   
 export default App;
+
+
